@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>SimpleBlock: Bringing Block Administration to the Masses (co-hosted by Sid Maskit) | DrupalCamp LA 2009</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/2009.drupalcampla/txt_drupalcamp_favicon.ico" type="image/x-icon" />
+<meta name="description" content="————————————————————————— Download the slides here —————————————————————&amp;#" />
+<link rel="canonical" href="./" />
+<meta name="revisit-after" content="1 day" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/environment_indicator/environment_indicator.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ctools/css/ctools.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date_popup/themes/datepicker.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date_popup/themes/jquery.timeentry.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/filefield/filefield.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/simplenews/simplenews.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/thickbox/thickbox.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/thickbox/thickbox_ie.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/extlink/extlink.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/panels/css/panels.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/html-elements.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/tabs.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/messages.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/block-editing.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/wireframes.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/layout.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/txt_drupalcamp.css" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/print.css" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/ie.css?u" />
+<![endif]-->
+  <script type="text/javascript" src="../../sites/all/modules/jquery_update/replace/jquery.min.js"></script>
+<script type="text/javascript" src="../../misc/jquery-extend-3.4.0.js"></script>
+<script type="text/javascript" src="../../misc/jquery-html-prefilter-3.5.0-backport.js"></script>
+<script type="text/javascript" src="../../misc/drupal.js"></script>
+<script type="text/javascript" defer="defer" src="../../sites/all/modules/environment_indicator/environment_indicator.min.js"></script>
+<script type="text/javascript" src="../../sites/all/modules/thickbox/thickbox.js"></script>
+<script type="text/javascript" src="../../sites/all/modules/extlink/extlink.js"></script>
+<script type="text/javascript" src="../../sites/all/modules/panels/js/panels.js"></script>
+<script type="text/javascript" src="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/script.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "\u002F", "environment_indicator": { "margin": "1", "position": "left", "text": "DRUPALCAMP LA 2009 ARCHIVE", "color": "#9c1616" }, "thickbox": { "close": "Close", "next": "Next \u003E", "prev": "\u003C Prev", "esc_key": "or Esc Key", "next_close": "Next \u002F Close on last", "image_count": "Image !current of !total" }, "extlink": { "extTarget": 0, "extClass": "ext", "extSubdomains": 1, "extExclude": "", "extInclude": "", "extCssExclude": "", "extCssExplicit": "", "extAlert": 0, "extAlertText": "This link will take you to an external web site. We are not responsible for their content.", "mailtoClass": "mailto" } });
+//--><!]]>
+</script>
+  
+  <!--[if lte IE 6]>
+  <meta http-equiv="refresh" content="0; url=/ie6.html" />
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  window.top.location = 'http://www.mozilla.com/firefox';
+  /* ]]> */
+  </script>
+  <![endif]-->
+  <!--[if IE 7]>
+  <style type="text/css" media="all">@import "/sites/2009.drupalcampla/themes/txt_drupalcamp/css/ie7.css";</style>
+  <![endif]-->
+</head>
+<body class="not-front not-logged-in node-type-session one-sidebar sidebar-right page-sessions-simpleblock-bringing-block-administration-masses-co-hosted-by-sid-maskit section-sessions">
+  <div id="wrapper"><div id="wrapper-inner-top"><div id="wrapper-inner-bottom"><div id="wrapper-inner-footer-top">
+
+      <div id="page"><div id="page-inner">
+
+        <a name="top" id="navigation-top"></a>
+
+        <div id="header"><div id="header-inner" class="clear-block">
+
+                      <div id="logo-title">
+
+              <div id="user-navigation">
+                              </div>
+          
+              <div id="user-registration-badge" class="step1">
+                <big>Not</big> registered<br /><a href="/user/register">register now</a>              </div>
+          
+
+                              <div id="logo"><a href="../../" title="DrupalCamp LA 2009" rel="home" class="button logo">DrupalCamp LA 2009</a></div>
+              
+            </div> <!-- /#logo-title -->
+          
+          
+        </div></div> <!-- /#header-inner, /#header -->
+
+        <div id="main"><div id="main-inner" class="clear-block with-navbar">
+
+          <div id="content"><div id="content-inner">
+
+                          <div id="content-header">
+                                  <div class="h1-wrapper clear-block">
+                    <h1 class="title">SimpleBlock: Bringing Block Administration to the Masses (co-hosted by Sid Maskit)</h1>
+                  </div>
+                                
+                                     <div id="content-top" class="region region-content_top">
+                        <div id="block-block-10" class="block block-block region-odd odd region-count-1 count-7 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="messages status">Note: this is an archived site. Visit us at <a href="http://ladrupal.org/">http://ladrupal.org</a>.</div>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+                    </div> <!-- /#content-top -->
+                                  
+                                                              </div> <!-- /#content-header -->
+            
+            <div id="content-area">
+              <div id="node-76" class="node clear-block">
+
+  
+  <div class="vote-link">
+    <div class="vote-count">64</div>
+    <a href="#">Sign In</a>  </div>
+
+  <div class="meta">
+  
+      <div class="terms terms-inline"><ul class="links inline"><li>Advanced</li><li>Code & Development</li><li>Design & Usability</li><li>Showcase & Strategy</li><li>Site Building</li></ul></div>
+    </div>
+
+  <div class="content">
+    <fieldset class="fieldgroup group-session-logistics"><legend>Logistics</legend><div class="field field-type-text field-field-session-day">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Day:&nbsp;</div>
+                    Sunday        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-session-time">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Time:&nbsp;</div>
+                    3:00pm        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-session-room">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Room:&nbsp;</div>
+                    PingVision room - DBH 1600 (1+)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-session-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    One hour        </div>
+        </div>
+</div>
+</fieldset>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+<a href="http://jg-soft.com/sites/default/files/documents/simpleblock_presentation.ppt" rel="nofollow">Download the slides here</a><br />
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+<p><strong>Update:</strong> <a href="../../users/sidm" rel="nofollow">Sid Maskit</a> will be a co-presenter following on after me, Jason. His company is the author of the <a href="http://drupal.org/project/promos" rel="nofollow">Promos</a> module! Sid will be imparting his knowledge about the Promos module, highly beneficial to those of us who need to make the drupal UI a bit friendlier to web producers.</p>
+<p><strong>Problem:</strong> Your client needs to create and administer blocks, but &#8230;</p>
+<ul>
+<li>The blocks user interface is too daunting for them.</li>
+<li>Your cunning developer instinct tells you it&#8217;s too dangerous to allow them to administer blocks.</li>
+</ul>
+
+
+<p><strong>Solution:</strong> Using <span class="caps">CCK</span>, create a node type and a custom module to&#8230;</p>
+<ul>
+<li>Give your users a new way to create and administer blocks.</li>
+<li>Save the website by not allowing users access to Drupal&#8217;s block administration.</li>
+</ul>
+
+
+<p><strong>Synopsis:</strong></p>
+<p>In many projects at Revere, we&#8217;ve had a requirement that the client be able to create &#8220;Promotional&#8221;  blocks. That is, they&#8217;d like to be able to create and administer blocks where they can embed ads, like flash ads, or plain old hyperlinked images, or some static <span class="caps">HTML</span> etc. etc.. The solution seems straightforward, &#8220;Why not give them access to block administration?&#8221;. That solution works acceptably when the client is a savvy individual who can be relied on not to break the website, and they&#8217;re not overwhelmed by the UI. But what if your client isn&#8217;t savvy and can&#8217;t/won&#8217;t learn the blocks UI?</p>
+<p>We&#8217;ve come up with a simple strategy where we allow blocks to be administered just like any other content on the site, via a cck node type. This way we have many options as to what the content of a block can be via cck fields, <strong>and the administrative interface is familiar</strong>. Come discover the why and how of our strategy and how you can use it to your own success!</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul></div>  <div id="comments">
+          <h2 id="comments-title">Comments</h2>
+        <a id="comment-208"></a>
+<div class="comment comment-published odd first last"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-208" class="active">Some Details from My Part of the Talk</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/sidm" title="View user profile.">Sid_M</a> on Mon, 2009-08-10 13:37.  </div>
+
+  <div class="content">
+    <p>My part centered around the <a href="http://drupal.org/project/promos" rel="nofollow">Promos Module</a></p>
+<p>Other Modules I used:</p>
+<p>To put <span class="caps">RSS</span> into a promo:<br />
+feedAPI<br />
+feedAPI Mapper<br />
+Views to create block displaying titles of <span class="caps">RSS</span> items for a feed<br />
+Views reference field to let manager choose a View to use<br />
+Node reference field to let manager choose a Feed to pass to View<br />
+A tiny bit of glue to turn the referenced node into an argument to the view reference</p>
+<p>To let the manager create views in promos:<br />
+<a href="http://drupal.org/project/simpleviews" rel="nofollow">Simple Views</a><br />
+<a href="http://drupal.org/node/531550" rel="nofollow">Simple Views Field</a><br />
+<a href="http://drupal.org/node/542164" rel="nofollow">My patch</a> to limit which nodes a manager can include in a simple view.</p>
+<p>To put an image in promos:<br />
+<a href="http://drupal.org/project/imagefield" rel="nofollow">Image Field</a></p>
+<p>Some Modules I didn&#8217;t mention, but which are also useful for giving the manager control:<br />
+<a href="http://drupal.org/project/taxonomy_delegate" rel="nofollow">Delegate Taxonomy</a><br />
+<a href="http://drupal.org/project/delegate_menu_admin" rel="nofollow">Delegate Menu</a><br />
+<a href="http://drupal.org/project/role_delegation" rel="nofollow">Delegate Role</a><br />
+<a href="http://drupal.org/project/flexifield" rel="nofollow">FlexiField</a> to use cck to create new field types consisting of multiple fields.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+  </div>
+            </div>
+
+            
+            
+          </div></div> <!-- /#content-inner, /#content -->
+
+                      <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
+
+              <a name="navigation" id="navigation"></a>
+
+              
+                              <div id="primary">
+                  <ul class="links"><li class="menu-2105 first"><a href="../../schedule" title="">Schedule</a></li>
+<li class="menu-682"><a href="../../information" title="Information">About</a></li>
+<li class="menu-752"><a href="../../attendees" title="Event attendees">Attendees</a></li>
+<li class="menu-748 last"><a href="../../sponsors" title="DrupalCampLA sponsors and community supporters">Sponsors</a></li>
+</ul>                </div> <!-- /#primary -->
+              
+                              <div id="secondary">
+                  <ul class="links"><li class="menu-678 first"><a href="../../news" title="Drupal Camp LA News and Announcements">News</a></li>
+<li class="menu-1242"><a href="../../drupalchix" title="Drupalchix">Drupalchix</a></li>
+<li class="menu-687"><a href="../../information/venue" title="Location &amp; Internet Wi-Fi details ">Venue</a></li>
+<li class="menu-2121 active"><a href=".." title="List of Sessions" class="active">Sessions</a></li>
+<li class="menu-716"><a href="../../forum" title="Discuss the camp with other attendees">Forums</a></li>
+<li class="menu-683"><a href="../../frequently-asked-questions" title="Frequently Asked Questions">FAQ</a></li>
+<li class="menu-1919 last"><a href="../../information/event-organizers" title="">Contact Us</a></li>
+</ul>                </div> <!-- /#secondary -->
+              
+              
+            </div></div> <!-- /#navbar-inner, /#navbar -->
+          
+          
+                      <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
+                <div id="block-profile-0" class="block block-profile region-odd odd region-count-1 count-1 clear-block"><div class="block-inner">
+
+      <h2 class="title">About <em>jgordon</em></h2>
+  
+  <div class="content">
+    <a href="../../users/jgordon"><img src="../../files/2009.drupalcampla/imagecache/profile-picture/pictures/picture-14.jpg" alt="" title="" width="185" height="200" class="imagecache imagecache-profile-picture"/></a>
+  <p>
+          <strong>Full Name</strong><br />
+            Jason Gordon  </p>
+  <p>
+          <strong>Company</strong><br />
+            The Revere Group  </p>
+  <p>
+          <strong>Link to web site</strong><br />
+            http://jg-soft.com  </p>
+  <p>
+          <strong>Interest</strong><br />
+            Drupal Service Provider  </p>
+<div><a href="../../users/jgordon">View full user profile</a></div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-views-attendees-block_3" class="block block-views region-even even region-count-2 count-2 clear-block"><div class="block-inner">
+
+      <h2 class="title">Attendees</h2>
+  
+  <div class="content">
+    <div class="view view-attendees view-id-attendees view-display-id-block_3 view-dom-id-1">
+    
+  
+  
+      <div class="view-content clear-block">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/umeshh85"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/blake-lucchesi"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-3.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/jcfiala"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-33.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/calebwalker"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/joe"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-100.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/alalalal"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-459.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/jgordon"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-14.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-8 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/nolimitsdude"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-146.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-9 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/viralshah"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-10 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/tallgood"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-354.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-11 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/dgurbaucsb"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-12 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mmilano"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-254.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-13 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/natalie-maclees"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-164.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-14 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mikechampa"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-15 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/williamestrada"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-16 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/jlewlotr"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-17 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/webthingee"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-150.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-18 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/shakaman"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-53.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-19 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/adundon"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-20 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/linusdude213"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-21 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/marsfly"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-313.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-22 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/cindersue"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-23 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/susie-karasic"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-24 views-row-even views-row-last">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/sidm"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-368.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-menu-menu-sessions" class="block block-menu region-odd odd region-count-3 count-3 clear-block"><div class="block-inner">
+
+      <h2 class="title">Filter Sessions</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="leaf first"><a href=".." title="">All Sessions</a></li>
+<li class="leaf"><a href="../picked" title="">Your Picks</a></li>
+<li class="leaf"><a href="../popular" title="">Most Popular</a></li>
+<li class="leaf"><a href="../business-side" title="">Business Side</a></li>
+<li class="leaf"><a href="../code-and-development" title="">Code &amp; Development</a></li>
+<li class="leaf"><a href="../design-and-usability" title="">Design &amp; Usability</a></li>
+<li class="leaf"><a href="../drupalchix" title="">Drupalchix</a></li>
+<li class="leaf"><a href="../performance-and-scalability" title="">Performance and Scalability</a></li>
+<li class="leaf"><a href="../showcase-and-strategy" title="">Showcase &amp; Strategy</a></li>
+<li class="leaf last"><a href="../site-building" title="">Site Building</a></li>
+</ul>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-8" class="block block-block region-even even region-count-4 count-4 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <a href="../women-drupal-please-stand-community-conversation-exceptional-women-drupal-discussing-how-en"><img src="../../files/2009.drupalcampla/cta-sidebar-chix.jpg" alt="Drupalchix Panel Talk" /></a>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-9" class="block block-block region-odd odd region-count-5 count-5 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><img src="../../files/2009.drupalcampla/drupalcampla2009_shirt-medium-w.jpg" alt="Buy our Drupal Camp LA shirt" title="Buy our Drupal Camp LA shirt" /><img src="../../files/2009.drupalcampla/drupalcampla2009_shirt-medium.jpg" alt="Buy our Drupal Camp LA shirt" title="Buy our Drupal Camp LA shirt" /></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-7" class="block block-block region-even even region-count-6 count-6 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><a href="../../sponsorship" rel="nofollow">Become a Sponsor</a></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+            </div></div> <!-- /#sidebar-right-inner, /#sidebar-right -->
+          
+        </div></div> <!-- /#main-inner, /#main -->
+
+      </div></div> <!-- /#page-inner, /#page -->
+
+  </div></div></div></div><!-- /#wrapper-inner, /#wrapper -->
+  
+      <div id="footer-wrapper" class="clear-block"><div id="footer-wrapper-inner" class="clear-block">
+    <div id="footer"><div id="footer-inner" class="region region-footer">
+
+              <div id="bottom" class="clear-block">
+          <div id="bottom-left">  <div id="block-views-attendees-block_2" class="block block-views region-odd even region-count-1 count-8 clear-block"><div class="block-inner">
+
+      <h2 class="title">Attendees</h2>
+  
+  <div class="content">
+    <div class="view view-attendees view-id-attendees view-display-id-block_2 view-dom-id-2">
+        <div class="view-header">
+      <p><a href="../../attendees" class="view-all" rel="nofollow">View All</a></p>
+    </div>
+  
+  
+  
+      <div class="view-content clear-block">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/marsfly"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-313.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/rob"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-138.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mike-stewart"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-5.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/rich-costello"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-419.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/phil-canvas"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-805.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/davidkrueger"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-574.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/anacapa"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-562.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-8 views-row-even views-row-last">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/brianmeert"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-380.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div>
+          <div id="bottom-center">  <div id="block-block-3" class="block block-block region-odd odd region-count-1 count-9 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><a href="../../drupalchix" rel="nofollow">Drupalchix Information</a></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div>
+          <div id="bottom-right">  <div id="block-views-sponsors-block_2" class="block block-views region-odd even region-count-1 count-10 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="view view-sponsors view-id-sponsors view-display-id-block_2 view-dom-id-3">
+        <div class="view-header">
+      <p><a href="../../sponsors" class="view-sponsors" rel="nofollow">View all Sponsors</a></p>
+    </div>
+  
+  
+  
+      <div class="view-content clear-block">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-sponsor-image-fid">
+                <span class="field-content"><a href="../../sponsors/acquia" class="imagecache imagecache-sponsor-footer imagecache-linked imagecache-sponsor-footer_linked"><img src="../../files/2009.drupalcampla/imagecache/sponsor-footer/acquia_0.png" alt="" title="" width="220" height="68" class="imagecache imagecache-sponsor-footer"/></a></span>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div>
+        </div>
+      
+      
+        <div id="block-menu-menu-footer" class="block block-menu region-odd odd region-count-1 count-11 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <ul class="menu"><li class="leaf first"><a href="../../news" title="">News</a></li>
+<li class="leaf"><a href="../../frequently-asked-questions" title="">FAQ</a></li>
+<li class="leaf"><a href="../../about-la-drupal" title="About LA Drupal">About LADrupal</a></li>
+<li class="leaf"><a href="../../sponsorship" title="">Become a Sponsor</a></li>
+<li class="leaf last"><a href="http://twitter.com/ladrupal" title="">Twitter</a></li>
+</ul>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-1" class="block block-block region-even even region-count-2 count-12 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p>Designed and Built by <a href="http://thisbythem.com/" rel="nofollow">This By Them</a><br />
+Powered by Drupal 6 / copyright &copy; 2009</p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+
+    </div></div></div></div> <!-- /#footer-inner, /#footer, /#footer-wrapper -->
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Views Demystified (2 hours) | DrupalCamp LA 2009</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/2009.drupalcampla/txt_drupalcamp_favicon.ico" type="image/x-icon" />
+<meta name="description" content="Are you wondering why you might use the Views module? If you should use the Views module? Wondering how “Filters” and “Sorting” and “Fields” can be used to easily create the sophisticated content presentation you seek?" />
+<link rel="canonical" href="./" />
+<meta name="revisit-after" content="1 day" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/environment_indicator/environment_indicator.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ctools/css/ctools.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date_popup/themes/datepicker.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/date/date_popup/themes/jquery.timeentry.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/filefield/filefield.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/simplenews/simplenews.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/thickbox/thickbox.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/thickbox/thickbox_ie.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/extlink/extlink.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/modules/fieldgroup/fieldgroup.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/panels/css/panels.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/html-elements.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/tabs.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/messages.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/block-editing.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/zen/zen/wireframes.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/layout.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/txt_drupalcamp.css" />
+<link type="text/css" rel="stylesheet" media="print" href="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/print.css" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/ie.css?u" />
+<![endif]-->
+  <script type="text/javascript" src="../../sites/all/modules/jquery_update/replace/jquery.min.js"></script>
+<script type="text/javascript" src="../../misc/jquery-extend-3.4.0.js"></script>
+<script type="text/javascript" src="../../misc/jquery-html-prefilter-3.5.0-backport.js"></script>
+<script type="text/javascript" src="../../misc/drupal.js"></script>
+<script type="text/javascript" defer="defer" src="../../sites/all/modules/environment_indicator/environment_indicator.min.js"></script>
+<script type="text/javascript" src="../../sites/all/modules/thickbox/thickbox.js"></script>
+<script type="text/javascript" src="../../sites/all/modules/extlink/extlink.js"></script>
+<script type="text/javascript" src="../../sites/all/modules/panels/js/panels.js"></script>
+<script type="text/javascript" src="../../sites/2009.drupalcampla.com/themes/txt_drupalcamp/script.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "\u002F", "environment_indicator": { "margin": "1", "position": "left", "text": "DRUPALCAMP LA 2009 ARCHIVE", "color": "#9c1616" }, "thickbox": { "close": "Close", "next": "Next \u003E", "prev": "\u003C Prev", "esc_key": "or Esc Key", "next_close": "Next \u002F Close on last", "image_count": "Image !current of !total" }, "extlink": { "extTarget": 0, "extClass": "ext", "extSubdomains": 1, "extExclude": "", "extInclude": "", "extCssExclude": "", "extCssExplicit": "", "extAlert": 0, "extAlertText": "This link will take you to an external web site. We are not responsible for their content.", "mailtoClass": "mailto" } });
+//--><!]]>
+</script>
+  
+  <!--[if lte IE 6]>
+  <meta http-equiv="refresh" content="0; url=/ie6.html" />
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  window.top.location = 'http://www.mozilla.com/firefox';
+  /* ]]> */
+  </script>
+  <![endif]-->
+  <!--[if IE 7]>
+  <style type="text/css" media="all">@import "/sites/2009.drupalcampla/themes/txt_drupalcamp/css/ie7.css";</style>
+  <![endif]-->
+</head>
+<body class="not-front not-logged-in node-type-session one-sidebar sidebar-right page-sessions-views-demystified section-sessions">
+  <div id="wrapper"><div id="wrapper-inner-top"><div id="wrapper-inner-bottom"><div id="wrapper-inner-footer-top">
+
+      <div id="page"><div id="page-inner">
+
+        <a name="top" id="navigation-top"></a>
+
+        <div id="header"><div id="header-inner" class="clear-block">
+
+                      <div id="logo-title">
+
+              <div id="user-navigation">
+                              </div>
+          
+              <div id="user-registration-badge" class="step1">
+                <big>Not</big> registered<br /><a href="/user/register">register now</a>              </div>
+          
+
+                              <div id="logo"><a href="../../" title="DrupalCamp LA 2009" rel="home" class="button logo">DrupalCamp LA 2009</a></div>
+              
+            </div> <!-- /#logo-title -->
+          
+          
+        </div></div> <!-- /#header-inner, /#header -->
+
+        <div id="main"><div id="main-inner" class="clear-block with-navbar">
+
+          <div id="content"><div id="content-inner">
+
+                          <div id="content-header">
+                                  <div class="h1-wrapper clear-block">
+                    <h1 class="title">Views Demystified (2 hours)</h1>
+                  </div>
+                                
+                                     <div id="content-top" class="region region-content_top">
+                        <div id="block-block-10" class="block block-block region-odd odd region-count-1 count-7 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="messages status">Note: this is an archived site. Visit us at <a href="http://ladrupal.org/">http://ladrupal.org</a>.</div>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+                    </div> <!-- /#content-top -->
+                                  
+                                                              </div> <!-- /#content-header -->
+            
+            <div id="content-area">
+              <div id="node-98" class="node clear-block">
+
+  
+  <div class="vote-link">
+    <div class="vote-count">201</div>
+    <a href="#">Sign In</a>  </div>
+
+  <div class="meta">
+  
+      <div class="terms terms-inline"><ul class="links inline"><li>Views</li><li>Views Module</li><li>Beginner</li><li>Drupalchix</li><li>Intermediate</li><li>Site Building</li></ul></div>
+    </div>
+
+  <div class="content">
+    <fieldset class="fieldgroup group-session-logistics"><legend>Logistics</legend><div class="field field-type-text field-field-session-day">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Day:&nbsp;</div>
+                    Saturday        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-session-time">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Time:&nbsp;</div>
+                    2:30p        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-session-room">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Room:&nbsp;</div>
+                    This By Them room - PSLH 100 (4)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-session-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    Two hours        </div>
+        </div>
+</div>
+</fieldset>
+<p>Are you wondering why you might use the Views module?  If you should use the Views module?  Wondering how &#8220;Filters&#8221; and &#8220;Sorting&#8221; and &#8220;Fields&#8221; can be used to easily create the sophisticated content presentation you seek?</p>
+<p>This session proposal is targeted for beginners and intermediate users who are still figuring out how to understand the basics of views.  We will stick to the views UI, delve into basic strategies for using views, and explore how the simple, non-code based tools within views can be used to create sophisticated results.</p>
+<p>(Note to advanced users: Blake Lucchesi proposed a cool session: <a href="../theming-views" rel="nofollow">Theming with Views</a>, which you might want to check out.)</p>
+<h3>Specific Goals</h3>
+<p>
+<ul></ul></p>
+<li>Using filters, fields and basic settings to get specific content displayed the way you want it</li>
+<p></p>
+<li>When to use a User view vs. a Node view (time/interest permitting we may go into the other view types)</li>
+<p></p>
+<li>Working with taxonomy terms to specify where content appears</li>
+<p></p>
+<li>How to take advantage of Block, Feed and Attachment views to deliver specific content
+<ul>
+<li>Including how looking at the blocks controls to set user and page rules</li>
+</ul>
+</li>
+<p>
+
+</p>
+<h3>Modules That Will Come Into Play</h3>
+<p>The following modules play an important role in the techniques that will be discussed above.</p>
+<ul>
+<li>Views (obviously :)</li>
+<li>Views Rotator (for cool slide-show type effect)</li>
+<li><span class="caps">CCK</span> &#8211; won&#8217;t go into depth on this one, but basically essential to truly harnessing the full coolness of Views</li>
+<li>Taxonomy (part of core) &#8211; won&#8217;t go into depth on this one either, but will need to take a quick look in order to harness more Views coolness</li>
+</ul>
+<h3>Additional</h3>
+<p>If there is time and interest near the end of the session, we&#8217;ll take a look at some core css theming tactics to use when theming views.  In order to focus this effort, we&#8217;ll stick to the following tools for this examination:</p>
+<ul>
+<li>Using Firebug to identify relevant class tags</li>
+<li>Using a Zen Sub-theme stylesheet</li>
+<li>Using &#8220;Re-write output&#8221; in views to add inline <span class="caps">CSS</span> when necessary</li>
+</ul>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul></div>  <div id="comments">
+          <h2 id="comments-title">Comments</h2>
+        <a id="comment-241"></a>
+<div class="comment comment-published odd first comment-by-author"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-241" class="active">thanks for your suggestion re: showing results on specific days!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/rainbreaw" title="View user profile.">rainbreaw</a> on Wed, 2009-08-19 19:43.  </div>
+
+  <div class="content">
+    <p>stevethewebguy: thanks for your suggestion about showing results on specific days.  Also, overdue responses to your two questions:</p>
+<p>Q) What was the thing you did to set up a search box for visitors to search the view? </p>
+<p>When you set up filters, add one under the search category labeled &#8220;Search:Search Terms&#8221;<br />
+This then gives you a search field that users can use!</p>
+<p>Q) Do you know if you can sub-group views? So for example, if you were grouping by content type and one of the groups was festivals – but you also wanted to group the festivals by type; art &amp; music for example… Could/would that be done by one big view, or would it be best to just create a festivals view that was grouped by festival type? And if so, would/could you then make a view that pulled in that view? Geeze, I hope that makes sense:)</p>
+<p>It sounds like what you want to do is possible with views, but I&#8217;m not sure if I completely understand exactly what your scenario is.  </p>
+<p>If your specific scenario is not doable with one view, there is a helper module that is great for blending views: Insert View<br />
+<a href="http://drupal.org/project/insert_view" title="http://drupal.org/project/insert_view" rel="nofollow">http://drupal.org/project/insert_view</a></p>
+<p>That might be more in line with where you are trying to go.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-202"></a>
+<div class="comment comment-published even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-202" class="active">Thanks for a great session</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/heatherwoz" title="View user profile.">heatherwoz</a> on Sun, 2009-08-09 08:36.  </div>
+
+  <div class="content">
+    <p>I&#8217;ve used Views before, but I never felt like I was fully wrapping my brain around it.  Now everything is clicking and I&#8217;ll feel much more confident about using it.  Thanks so much!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-201"></a>
+<div class="comment comment-published odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-201" class="active">Views Were Demystified!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/jfbutz" title="View user profile.">jfbutz</a> on Sun, 2009-08-09 07:31.  </div>
+
+  <div class="content">
+    <p>Great session, a terrific use of two hours, which probably saved me hours of looking through documents/books on the subject.</p>
+<p>Very clear, well thought through and Rain&#8217;s delivery was excellent.</p>
+<p>Thanks for all you work and a great session.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-197"></a>
+<div class="comment comment-published even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-197" class="active">Great session, I really enjoyed it!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/stevethewebguy" title="View user profile.">stevethewebguy</a> on Sat, 2009-08-08 23:59.  </div>
+
+  <div class="content">
+    <p>I have a few questions and a comment:<br />
+<strong>Q)</strong> What was the thing you did to set up a search box for visitors to search the view? I know how to expose stuff, but I must have just missed a step when you set up that filter or whatever (My laptop was power thirsty &amp; I had to re-situate mid-lecture :)</p>
+<p><strong>Q)</strong> Do you know if you can sub-group views? So for example, if you were grouping by content type and one of the groups was festivals &#8211; but you also wanted to group the festivals by type; art &amp; music for example&#8230; Could/would that be done by one big view, or would it be best to just create a festivals view that was grouped by festival type? And if so, would/could you then make a view that pulled in that view? Geeze, I hope that makes sense:) </p>
+<p><strong>C)</strong> When you were demoing the random sort order feature, someone  mentioned wanting to set up a view that would display different/specific results on different/specific days. To do that I would probably add a day field to the content type (date/day of the week or however you wanted to control when they display) and then argue the current date/day of the week to the view using the <span class="caps">PHP</span> input. </p>
+<p><strong>Thanks again Rain!<br />
+Drupalchix rock!</strong></p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-195"></a>
+<div class="comment comment-published odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-195" class="active">Best Session for me</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/tommy-keswick" title="View user profile.">Tommy Keswick</a> on Sat, 2009-08-08 21:20.  </div>
+
+  <div class="content">
+    <p>I just wanted to say thanks for such a great session! This was exactly what I needed before I felt comfortable with getting my feet wet with Views. That control panel for the module is no longer intimidating to me at all.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-191"></a>
+<div class="comment comment-published even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-191" class="active">The link from the end of the presentation</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/varr" title="View user profile.">varr</a> on Sat, 2009-08-08 15:15.  </div>
+
+  <div class="content">
+    <p>Great presentation:</p>
+<p>This is the links from the end of the presentation:</p>
+<p><a href="http://sunrainproductions.com/drupalcampla" title="http://sunrainproductions.com/drupalcampla" rel="nofollow">http://sunrainproductions.com/drupalcampla</a></p>
+<p>Thanks!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-131"></a>
+<div class="comment comment-published odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-131" class="active">if you are planning to go to &quot;CCK Demystified&quot;</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/dougvann" title="View user profile.">dougvann</a> on Sun, 2009-08-02 15:39.  </div>
+
+  <div class="content">
+    <p>Definitely make sure to do this <span class="caps">VIEWS</span> session as well!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-119"></a>
+<div class="comment comment-published even comment-by-author"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-119" class="active">check out CCK Demystified!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/rainbreaw" title="View user profile.">rainbreaw</a> on Wed, 2009-07-29 09:29.  </div>
+
+  <div class="content">
+    <p><a href="../../users/dougvann" rel="nofollow">dougvann</a> is offering a session that will go great with this one:</p>
+<p><a href="../cck-demystified" rel="nofollow"><span class="caps">CCK</span> Demystified</a></p>
+<p>Understanding <span class="caps">CCK</span> will enable you to go that much further with views!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-100"></a>
+<div class="comment comment-published odd comment-by-author"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-100" class="active">CCK and Image Handling Session</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/rainbreaw" title="View user profile.">rainbreaw</a> on Tue, 2009-07-21 06:52.  </div>
+
+  <div class="content">
+    <p>Thank you <a href="../../users/christophweber" rel="nofollow">ChristofWeber</a>for pointing this out! These two sessions (&#8220;Views Demystified&#8221; and &#8220;Image Handling&#8221;) would go quite nicely together for a beginner or intermediate user interested in putting together a really cool layout.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-55"></a>
+<div class="comment comment-published even last"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="index.html#comment-55" class="active">Very cool</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by <a href="../../users/christophweber" title="View user profile.">ChristophWeber</a> on Fri, 2009-07-17 07:26.  </div>
+
+  <div class="content">
+    <p>Glad to see a Views session aimed at noobs and intermediate users. Every Drupal noob hears the magic words <span class="caps">CCK</span> and Views, but rarely has a clear idea what the buzz is about, and the project pages at drupal.org aren&#8217;t much help for the newcomer either. </p>
+<p>You mention that you won&#8217;t go into depth with <span class="caps">CCK</span>.  My session <a href="../image-handling-sane-way" rel="nofollow">Image Handling the Sane Way</a> falls way short on the Views side, but does cover many aspects of <span class="caps">CCK</span> by way of example. So it looks like our two sessions together make a nice package. I have added a link from mine to here to help people pick both.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"><span><a href="#">Login</a> to post comments</span></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+  </div>
+            </div>
+
+            
+            
+          </div></div> <!-- /#content-inner, /#content -->
+
+                      <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
+
+              <a name="navigation" id="navigation"></a>
+
+              
+                              <div id="primary">
+                  <ul class="links"><li class="menu-2105 first"><a href="../../schedule" title="">Schedule</a></li>
+<li class="menu-682"><a href="../../information" title="Information">About</a></li>
+<li class="menu-752"><a href="../../attendees" title="Event attendees">Attendees</a></li>
+<li class="menu-748 last"><a href="../../sponsors" title="DrupalCampLA sponsors and community supporters">Sponsors</a></li>
+</ul>                </div> <!-- /#primary -->
+              
+                              <div id="secondary">
+                  <ul class="links"><li class="menu-678 first"><a href="../../news" title="Drupal Camp LA News and Announcements">News</a></li>
+<li class="menu-1242"><a href="../../drupalchix" title="Drupalchix">Drupalchix</a></li>
+<li class="menu-687"><a href="../../information/venue" title="Location &amp; Internet Wi-Fi details ">Venue</a></li>
+<li class="menu-2121 active"><a href=".." title="List of Sessions" class="active">Sessions</a></li>
+<li class="menu-716"><a href="../../forum" title="Discuss the camp with other attendees">Forums</a></li>
+<li class="menu-683"><a href="../../frequently-asked-questions" title="Frequently Asked Questions">FAQ</a></li>
+<li class="menu-1919 last"><a href="../../information/event-organizers" title="">Contact Us</a></li>
+</ul>                </div> <!-- /#secondary -->
+              
+              
+            </div></div> <!-- /#navbar-inner, /#navbar -->
+          
+          
+                      <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
+                <div id="block-profile-0" class="block block-profile region-odd odd region-count-1 count-1 clear-block"><div class="block-inner">
+
+      <h2 class="title">About <em>rainbreaw</em></h2>
+  
+  <div class="content">
+    <a href="../../users/rainbreaw"><img src="../../files/2009.drupalcampla/imagecache/profile-picture/pictures/picture-8.jpg" alt="" title="" width="266" height="149" class="imagecache imagecache-profile-picture"/></a>
+  <p>
+          <strong>Full Name</strong><br />
+            Rain Breaw  </p>
+  <p>
+          <strong>Company</strong><br />
+            SunRain Productions  </p>
+  <p>
+          <strong>Link to web site</strong><br />
+            http://www.sunrainproductions.com/  </p>
+  <p>
+          <strong>Interest</strong><br />
+            Drupal Service Provider  </p>
+<div><a href="../../users/rainbreaw">View full user profile</a></div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-views-attendees-block_3" class="block block-views region-even even region-count-2 count-2 clear-block"><div class="block-inner">
+
+      <h2 class="title">Attendees</h2>
+  
+  <div class="content">
+    <div class="view view-attendees view-id-attendees view-display-id-block_3 view-dom-id-1">
+    
+  
+  
+      <div class="view-content clear-block">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/williamestrada"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/ruess"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/chungerford"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/ki"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/kkrahel"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-458.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/llmacdon"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/damon"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-198.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-8 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/samirevah"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-9 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/aldrst"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-10 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/dshieh"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-104.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-11 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/qingyunl"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-12 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/dadamo"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-13 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mrvini"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-14 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/vickiwchiu"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-550.png" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-15 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/jerry"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-16 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/papper"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-636.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-17 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mturnwall"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-508.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-18 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/paula"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-19 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mroyer1"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-39.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-20 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/jtan"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-21 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/dutran"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-22 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/eqbalz"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-23 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/sophyas"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-24 views-row-even views-row-last">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/theajaysharma"><img src="../../files/2009.drupalcampla/imagecache/medium-70/default-pic.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-menu-menu-sessions" class="block block-menu region-odd odd region-count-3 count-3 clear-block"><div class="block-inner">
+
+      <h2 class="title">Filter Sessions</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="leaf first"><a href=".." title="">All Sessions</a></li>
+<li class="leaf"><a href="../picked" title="">Your Picks</a></li>
+<li class="leaf"><a href="../popular" title="">Most Popular</a></li>
+<li class="leaf"><a href="../business-side" title="">Business Side</a></li>
+<li class="leaf"><a href="../code-and-development" title="">Code &amp; Development</a></li>
+<li class="leaf"><a href="../design-and-usability" title="">Design &amp; Usability</a></li>
+<li class="leaf"><a href="../drupalchix" title="">Drupalchix</a></li>
+<li class="leaf"><a href="../performance-and-scalability" title="">Performance and Scalability</a></li>
+<li class="leaf"><a href="../showcase-and-strategy" title="">Showcase &amp; Strategy</a></li>
+<li class="leaf last"><a href="../site-building" title="">Site Building</a></li>
+</ul>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-8" class="block block-block region-even even region-count-4 count-4 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <a href="../women-drupal-please-stand-community-conversation-exceptional-women-drupal-discussing-how-en"><img src="../../files/2009.drupalcampla/cta-sidebar-chix.jpg" alt="Drupalchix Panel Talk" /></a>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-9" class="block block-block region-odd odd region-count-5 count-5 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><img src="../../files/2009.drupalcampla/drupalcampla2009_shirt-medium-w.jpg" alt="Buy our Drupal Camp LA shirt" title="Buy our Drupal Camp LA shirt" /><img src="../../files/2009.drupalcampla/drupalcampla2009_shirt-medium.jpg" alt="Buy our Drupal Camp LA shirt" title="Buy our Drupal Camp LA shirt" /></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-7" class="block block-block region-even even region-count-6 count-6 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><a href="../../sponsorship" rel="nofollow">Become a Sponsor</a></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+            </div></div> <!-- /#sidebar-right-inner, /#sidebar-right -->
+          
+        </div></div> <!-- /#main-inner, /#main -->
+
+      </div></div> <!-- /#page-inner, /#page -->
+
+  </div></div></div></div><!-- /#wrapper-inner, /#wrapper -->
+  
+      <div id="footer-wrapper" class="clear-block"><div id="footer-wrapper-inner" class="clear-block">
+    <div id="footer"><div id="footer-inner" class="region region-footer">
+
+              <div id="bottom" class="clear-block">
+          <div id="bottom-left">  <div id="block-views-attendees-block_2" class="block block-views region-odd even region-count-1 count-8 clear-block"><div class="block-inner">
+
+      <h2 class="title">Attendees</h2>
+  
+  <div class="content">
+    <div class="view view-attendees view-id-attendees view-display-id-block_2 view-dom-id-2">
+        <div class="view-header">
+      <p><a href="../../attendees" class="view-all" rel="nofollow">View All</a></p>
+    </div>
+  
+  
+  
+      <div class="view-content clear-block">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/mmilano"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-254.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/moezart"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-62.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/gabriella1978"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-810.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/johnmaster208"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-483.png" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/zachattack"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-47.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/bsenftner"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-532.gif" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/dougvann"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-358.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+  <div class="views-row views-row-8 views-row-even views-row-last">
+      
+  <div class="views-field-picture">
+                <div class="field-content"><a href="../../users/frankfarm"><img src="../../files/2009.drupalcampla/imagecache/medium-70/pictures/picture-244.jpg" alt="" title="" width="60" height="60" class="imagecache imagecache-medium-70"/></a></div>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div>
+          <div id="bottom-center">  <div id="block-block-3" class="block block-block region-odd odd region-count-1 count-9 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><a href="../../drupalchix" rel="nofollow">Drupalchix Information</a></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div>
+          <div id="bottom-right">  <div id="block-views-sponsors-block_2" class="block block-views region-odd even region-count-1 count-10 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="view view-sponsors view-id-sponsors view-display-id-block_2 view-dom-id-3">
+        <div class="view-header">
+      <p><a href="../../sponsors" class="view-sponsors" rel="nofollow">View all Sponsors</a></p>
+    </div>
+  
+  
+  
+      <div class="view-content clear-block">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field-field-sponsor-image-fid">
+                <span class="field-content"><a href="../../sponsors/revere-group" class="imagecache imagecache-sponsor-footer imagecache-linked imagecache-sponsor-footer_linked"><img src="../../files/2009.drupalcampla/imagecache/sponsor-footer/revere-logo_0.png" alt="" title="" width="175" height="75" class="imagecache imagecache-sponsor-footer"/></a></span>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div>
+        </div>
+      
+      
+        <div id="block-menu-menu-footer" class="block block-menu region-odd odd region-count-1 count-11 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <ul class="menu"><li class="leaf first"><a href="../../news" title="">News</a></li>
+<li class="leaf"><a href="../../frequently-asked-questions" title="">FAQ</a></li>
+<li class="leaf"><a href="../../about-la-drupal" title="About LA Drupal">About LADrupal</a></li>
+<li class="leaf"><a href="../../sponsorship" title="">Become a Sponsor</a></li>
+<li class="leaf last"><a href="http://twitter.com/ladrupal" title="">Twitter</a></li>
+</ul>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+  <div id="block-block-1" class="block block-block region-even even region-count-2 count-12 clear-block"><div class="block-inner">
+
+  
+  <div class="content">
+    <p>Designed and Built by <a href="http://thisbythem.com/" rel="nofollow">This By Them</a><br />
+Powered by Drupal 6 / copyright &copy; 2009</p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+
+    </div></div></div></div> <!-- /#footer-inner, /#footer, /#footer-wrapper -->
+  
+  
+  
+</body>
+</html>
